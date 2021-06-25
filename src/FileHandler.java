@@ -11,6 +11,7 @@ public class FileHandler {
             Reader.Scan(fileName);
             Reader.Buffer(fileName);
             Reader.Stream(fileName);
+            Reader.Stream2(fileName);
         } catch (IOException e) {
             e.printStackTrace();
         }

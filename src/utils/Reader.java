@@ -36,4 +36,14 @@ public class Reader {
                 stream.forEach(System.out::println);
          */
     }
+
+    public static void Stream2(String fileName) throws IOException {
+        // Stream<String> stream = Files.lines(Paths.get(fileName));
+        Files.lines(Paths.get(fileName)).forEach(line -> {
+            System.out.println(line);
+        });
+        /* Ugyanez kicsit másképp:
+                stream.forEach(System.out::println);
+         */
+    }
 }
